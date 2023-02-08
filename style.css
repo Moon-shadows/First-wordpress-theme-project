@@ -1,0 +1,348 @@
+/*Basic Settings*/
+body {
+    background-color:whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+   }
+
+h1 {
+    padding: 8px;
+    color: whitesmoke;
+    background: rgb(26, 158, 181);
+    border-radius: 8px;
+    margin-top: 150px;
+    font-size: 48px;
+    font-family: 'Roboto Slab' , serif;
+   }
+   .huvudrubrik {
+    margin-top: 0px;
+   }
+
+p {
+    line-height: 1.5;
+   }
+
+main {
+    margin: 0 auto;
+   }
+
+/* Banner */
+   #banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2) url('img/jesus-loves-austin-TqHDqXkWSCk-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: white;
+  }
+  #banner h3 {
+    background: rgba(255, 166, 0, 0.508);
+    border-radius: 8px;
+    font-size: 24px;
+    width: 50%;
+ 
+    text-align: center;
+  }
+
+  .box1{
+    width: 25%;
+    margin-top: 100px;
+    border-radius: 8px;
+    color: orange;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+   }
+
+  .box1  h2, p {
+   color: black;
+   text-align: center;
+  }
+
+  #action {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+/*Searchbox */
+  #searchbox{
+    position: fixed;
+    right: 0;
+    top: 12px;
+    width: 80px;
+    pointer-events: none;
+    z-index: 50;
+    transition: 2.4s;
+   }
+  #searchbox input {
+    height: 30px;
+    width: 100%;
+   }
+  input,
+  textarea{
+    height: 20px;
+    padding: 0 8px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    border: solid 1px black;
+   }
+  input:focus,
+  textarea:focus{
+    outline: none;
+   }
+
+/*Navigation */
+  nav {
+    height: 72px;
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+   }
+  nav a {
+    padding: 0 32px;
+    color: black;
+    transition: 0.4s;
+    text-decoration: none;
+  }
+  nav a:hover{
+    text-decoration: none;
+    color: rgba(44, 191, 217, 0.8);
+    text-decoration: underline;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+  }
+  .active {
+    color: rgb(243, 11, 185);
+  }
+
+
+  #logo-img {
+    display: flex;
+    height: 100%;
+    background: #111;
+    padding: 0 32px;
+    align-items: center;
+    color: white;
+    transition: .4s;
+  }
+ #logo-image img {
+    height: 70px;
+  }
+  #logo-image:hover {
+    background:pink;
+  }
+
+
+/*Hamburger Icon */
+  #menu-icon {
+    height: 100%;
+    font-size: 28px;
+    padding: 0 4px;
+    color: #eee;
+    display: none;
+    align-items: center;
+  }
+
+/* Search Icon */
+  #search-icon {
+    color: white;
+    padding: 0 32px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  #search-icon:hover {
+    columns: red;
+  }
+
+/*  Slideout Menu  */
+  #slidout-menu {
+    display: none;
+  }
+
+/*  Section  */
+  section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .section-heading {
+    font-size: 32px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:  rgb(243, 11, 185);
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    transition: all 0.4s;
+    display: inline-block;
+    padding: 4px 32px;
+  }
+  .section-heading:hover {
+    padding: 4px 48px;
+    background: pink;
+  }
+
+/*  Sectin Source  */
+    #section-source {
+        display: flex;
+        flex-direction: column;
+    }
+      #section-source p {
+            padding: 8px;
+            text-align: center;
+      }
+      #section-source a {
+        margin: 8px;
+        text-align: center;
+      }
+
+/*  Card  */
+  .card-image {
+    transition: 0.4s;
+  }
+
+  .card-image:hover {
+    box-shadow: 0 10px 6px -6px black;
+  }
+
+  .card-description {
+    padding: 0 8px;
+  }
+
+  /*  Button Read more */
+  .btn-readmore {
+    padding: 8px 24px;
+    border: 3px solid black;
+    transition: 0.4s;
+    display: inline-block;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+  }
+  .btn-readmore:hover {
+    background-color: pink;
+    text-decoration: none;
+    padding: 8px 64px 8px 24px;
+  }
+  .btn-se-mer {
+
+    padding: 8px 18px;
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    display: inline-block;
+    justify-content: center;
+    width: 75%;
+    height: 30px;
+    border-radius: 24px;
+    text-align: center;
+  }
+
+/* Footer */
+    footer {
+      background-color: black;
+      color: #eee;
+      padding: 8px;
+      display: flex;
+    }
+    footer a {
+      color: white;
+    }
+
+/* Left Footer */
+    footer #left-footer {
+      flex: 1;
+      border-right: 1px solid rgba(44, 191, 217, 0.8);
+      padding-left: 32px;
+    }
+    footer #left-footer ul{
+      padding: 0;
+      list-style: none;
+      line-height: 1.5;
+    }
+
+
+/* Right Footer */
+    footer #right-footer{
+      flex: 2;
+      padding: 8px;
+      text-align: center;
+    }
+    footer #social-media-footer {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      padding: 0;
+    }
+    footer #social-media-footer ul li{
+      font-size: 40px;
+      padding: 16px;
+      transition: 0.4s;
+    }
+    footer #social-media-footer ul li:hover a .fa-facebook {
+      color: red;
+    }
+    footer #social-media-footer ul li:hover a .fa-youtube {
+      color: #3b5998;
+    }
+    footer #social-media-footer ul li:hover a .fa-github{
+      color: #bbb;
+    }
+    footer #social-media-footer a .fa-facebook,
+    footer #social-media-footer a .fa-youtube,
+    footer #social-media-footer a .fa-github {
+      color: white;
+      transition: 0.4s;
+    }
+    
+
+/*  Media Queries */
+    @media(min-width: 720px){
+      main{
+          width: 95%;
+      }
+      .card {
+          width: 45%;
+      }
+      .card .card-imgage img {
+          width: 100%;
+      }
+  }
+
+  @media(min-width: 1200px) {
+      main {
+          width: 85%;
+      }
+  }
+
+
+
+
+
+
