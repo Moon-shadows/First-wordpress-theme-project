@@ -59,7 +59,7 @@ p {
 /*Navigation */
   nav {
     height: 120px;
-    background-color: white;
+    background-color: rgb(251, 224, 229);
     width: 100%;
     margin: 0;
     position: fixed;
@@ -102,9 +102,14 @@ p {
     color: white;
     transition: .4s;
   }
+
+  #logo-image {
+    display: flex;
+  }
  #logo-image img {
     height: 70px;
   }
+
   #logo-image:hover {
     background:pink;
   }
