@@ -126,7 +126,7 @@ p {
 
 /* Search Icon */
   #search-icon {
-    color: white;
+    color: black;
     padding: 0 32px;
     cursor: pointer;
     transition: 0.4s;
@@ -405,7 +405,7 @@ p {
     footer #social-media-footer a .fa-facebook,
     footer #social-media-footer a .fa-youtube,
     footer #social-media-footer a .fa-github {
-      color: white;
+      color: black
       transition: 0.4s;
     }
 /*------------------------------------------------------*/
