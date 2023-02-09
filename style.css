@@ -8,17 +8,11 @@ body {
    }
 
 h1 {
-    padding: 36px;
     color: whitesmoke;
-    background: rgb(26, 158, 181);
-    border-radius: 8px;
-    margin-top: 170px;
     font-size: 40px;
     font-family: 'Roboto Slab' , serif;
    }
-   .huvudrubrik {
-  margin-top: 300px;
-   }
+   
 
 p {
     line-height: 1.5;
@@ -65,7 +59,7 @@ main {
 
 /*Navigation */
   nav {
-    height: 72px;
+    height: 120px;
     background-color: white;
     width: 100%;
     margin: 0;
@@ -153,25 +147,23 @@ main {
     background-position: center;
     background-blend-mode: overlay;
     color: white;
-    margin-bottom: 150px;
+    margin-bottom: 300px;
   }
 
   #banner h1 {
-    background: rgba(26, 158, 181, 0.4);s
     border-radius: 8px;
-    font-size: 40px;
+    font-size: 70px;
     width: 50%;
-    padding: 30px;
     text-align: center;
-    margin-top: 700px;
+    margin-top: 1200px;
+    line-height: normal;
+    color: ;
   }
   #banner h3 {
-    background: rgba(26, 158, 181, 0.4);s
-    border-radius: 8px;
-    font-size: 24px;
+    font-size: 30px;
     width: 50%;
-    padding: 30px;
     text-align: center;
+    color: white;
   }
 
 
@@ -187,7 +179,7 @@ main {
  .card2 {
     background: white;
     width: 25%;
-    border:20px solid white;
+    border:10px solid white;
     border-radius: 20px;
   }
   .card-image2 img, h3{
@@ -202,30 +194,36 @@ main {
     padding: 0 8px;
   }
 
-  .packet-header {
- font-size: 48px;
+  #banner .section .card-description2 h3 {
+    font-size: 20px;
     color: rgb(195, 34, 34);
+    margin-top: 10;
+    margin-bottom: 10px;
   }
 
 
   .card-description2 p {
     color: black;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+
   }
 
   /*  Button Read more 2 */
   .btn-readmore2 {
-    padding: 8px 24px;
+    padding: 8px;
     border: 3px solid rgb(215, 27, 27);
     border-radius: 20px;
     transition: 0.4s;
     display: inline-block;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
     margin-left: 24px;
     font-weight: bold;
     cursor: pointer;
     background-color: white;
     width: 70%;
-   text-align: center;
+    text-align: center;
   }
   .btn-readmore2:hover {
     background-color: pink;
