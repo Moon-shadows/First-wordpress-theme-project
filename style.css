@@ -27,6 +27,7 @@ p {
 main {
     margin: 0 auto;
    }
+  /*------------------------------------------------------*/
 
 /*  Slideout Menu  */
   #slidout-menu {
@@ -84,50 +85,59 @@ main {
     text-align: center;
   }
 
- /*------------------------------------------------------*/
-  /* Paket */
-  #paket {
+
+/*  Card 2 */
+.section {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
-  .box1{
-    width: 25%;
-    margin-top: 100px;
+
+
+  .card2 {
+    background: white;
+    width: 30%;
     border: 1px solid black;
-    border-radius: 8px;
-    color: rgb(243, 11, 185);
-    background-color: whitesmoke;
+    border-radius: 20px;
+  }
+  .card-image2 img, h3{
+    width: 100%;
+  }
+
+ .card-description2 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    padding-bottom: 10px;
-   }
-
-  .box1  h2, p {
-   color: black;
-   text-align: center;
+    padding: 0 8px;
   }
 
-  /*  Button Se Mer */
-  .btn-se-mer {
-
-    padding: 8px 18px;
-    text-decoration: none;
-    border: 2px solid  rgb(26, 158, 181); 
-    background-color: white;
-    color: rgb(26, 158, 181);
-    font-weight: bold;
-    font-size: 24px;
+  /*  Button Read more 2 */
+  .btn-readmore2 {
+    padding: 8px 24px;
+    border: 3px solid black;
+    transition: 0.4s;
     display: inline-block;
-    justify-content: center;
-    width: 75%;
-    height: 30px;
-    border-radius: 24px;
-    text-align: center;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
   }
+  .btn-readmore2:hover {
+    background-color: pink;
+    text-decoration: none;
+    padding: 8px 64px 8px 24px;
+  }
+
  /*------------------------------------------------------*/
+  
+ 
+ 
+
+
+ 
+
 
 
  /*Searchbox */
