@@ -13,12 +13,11 @@ h1 {
     font-family: 'Roboto Slab' , serif;
    }
    
-
 p {
     line-height: 1.5;
    }
 
-main {
+   main {
     margin: 0 auto;
    }
 /*------------------------------------------------------*/
@@ -94,8 +93,7 @@ main {
     color: rgb(243, 11, 185);
   }
 
-
-  #logo-img {
+ #logo-img {
     display: flex;
     height: 100%;
     background: #111;
@@ -147,7 +145,7 @@ main {
     background-position: center;
     background-blend-mode: overlay;
     color: white;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
   }
 
   #banner h1 {
@@ -155,15 +153,17 @@ main {
     font-size: 70px;
     width: 50%;
     text-align: center;
-    margin-top: 1200px;
+    margin-top: 1000px;
+    margin-bottom: 0px;
     line-height: normal;
     color: ;
   }
   #banner h3 {
     font-size: 30px;
-    width: 50%;
+    width: 60%;
     text-align: center;
     color: white;
+    font-weight: lighter;
   }
 
 
@@ -182,7 +182,7 @@ main {
     border:10px solid white;
     border-radius: 20px;
   }
-  .card-image2 img, h3{
+  .card-image2 img{
     width: 100%;
   }
 
