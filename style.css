@@ -8,16 +8,16 @@ body {
    }
 
 h1 {
-    padding: 8px;
+    padding: 36px;
     color: whitesmoke;
     background: rgb(26, 158, 181);
     border-radius: 8px;
-    margin-top: 150px;
-    font-size: 48px;
+    margin-top: 170px;
+    font-size: 40px;
     font-family: 'Roboto Slab' , serif;
    }
    .huvudrubrik {
-    margin-top: 0px;
+  margin-top: 300px;
    }
 
 p {
@@ -27,6 +27,39 @@ p {
 main {
     margin: 0 auto;
    }
+
+/*  Slideout Menu  */
+  #slidout-menu {
+    display: none;
+    background: #2d3436;
+    z-index: 100;
+    position: fixed;
+    transition: 0.4s;
+    margin-top: 72px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+  }
+  #slidout-menu ul {
+    list-style: none;
+    padding: 0 32px;
+  }
+  #slidout-menu ul li {
+    padding: 8px;
+  }
+  #slidout-menu a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    color: white;
+  }
+  #slidout-menu input {
+    width: 85%;
+    padding: 8px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
 
 /* Banner */
    #banner {
@@ -43,19 +76,27 @@ main {
     color: white;
   }
   #banner h3 {
-    background: rgba(255, 166, 0, 0.508);
+    background: rgba(26, 158, 181, 0.4);s
     border-radius: 8px;
     font-size: 24px;
     width: 50%;
- 
+    padding: 30px;
     text-align: center;
   }
 
+ /*------------------------------------------------------*/
+  /* Paket */
+  #paket {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   .box1{
     width: 25%;
     margin-top: 100px;
+    border: 1px solid black;
     border-radius: 8px;
-    color: orange;
+    color: rgb(243, 11, 185);
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -69,13 +110,27 @@ main {
    text-align: center;
   }
 
-  #action {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+  /*  Button Se Mer */
+  .btn-se-mer {
 
-/*Searchbox */
+    padding: 8px 18px;
+    text-decoration: none;
+    border: 2px solid  rgb(26, 158, 181); 
+    background-color: white;
+    color: rgb(26, 158, 181);
+    font-weight: bold;
+    font-size: 24px;
+    display: inline-block;
+    justify-content: center;
+    width: 75%;
+    height: 30px;
+    border-radius: 24px;
+    text-align: center;
+  }
+ /*------------------------------------------------------*/
+
+
+ /*Searchbox */
   #searchbox{
     position: fixed;
     right: 0;
@@ -101,8 +156,9 @@ main {
   textarea:focus{
     outline: none;
    }
+ /*------------------------------------------------------*/
 
-/*Navigation */
+ /*Navigation */
   nav {
     height: 72px;
     background-color: white;
@@ -177,11 +233,8 @@ main {
   #search-icon:hover {
     columns: red;
   }
+ /*------------------------------------------------------*/
 
-/*  Slideout Menu  */
-  #slidout-menu {
-    display: none;
-  }
 
 /*  Section  */
   section {
@@ -248,31 +301,17 @@ main {
     text-decoration: none;
     padding: 8px 64px 8px 24px;
   }
-  .btn-se-mer {
-
-    padding: 8px 18px;
-    text-decoration: none;
-    background-color: orange;
-    color: white;
-    font-weight: bold;
-    font-size: 24px;
-    display: inline-block;
-    justify-content: center;
-    width: 75%;
-    height: 30px;
-    border-radius: 24px;
-    text-align: center;
-  }
+/*------------------------------------------------------*/  
 
 /* Footer */
     footer {
-      background-color: black;
-      color: #eee;
+      background-color:  pink;
+      color: rgb(59, 38, 38);
       padding: 8px;
       display: flex;
     }
     footer a {
-      color: white;
+      color: rgb(59, 38, 38);
     }
 
 /* Left Footer */
@@ -320,7 +359,9 @@ main {
       color: white;
       transition: 0.4s;
     }
-    
+/*------------------------------------------------------*/
+
+
 
 /*  Media Queries */
     @media(min-width: 720px){
@@ -340,6 +381,72 @@ main {
           width: 85%;
       }
   }
+  @media(max-width: 900px) {
+    nav ul{
+      display: none;
+    }
+    menu-icon{
+      display: flex;
+    }
+    #searchbox{
+      display: none;
+    }
+    #slidout-menu{
+      display: block;
+    }
+  }
+  @media(max-width: 719px) {
+    main{
+      width: 95%;
+    }
+    
+    section{
+      flex-direction: column;
+    }
+
+    .card,
+    .card .card-image img{
+      width: 100%;
+    }
+
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+    footer #left-footer {
+      flex:1;
+      border-right: 0;
+      padding-left: 0;
+    }
+    footer #right-footer {
+      background: #eee;
+      color: rgb(59, 38, 38);
+    }
+    
+
+    @media(max-width: 600px) {
+    main{
+     width: 100%;
+    }
+      
+    .card {
+      text-align: center;
+    }
+
+    logo-image {
+      padding: 0;
+    }
+
+    h1{
+      font-size: 48px;
+     }
+     
+     #banner h3{
+      font-size: 20px;
+     }
+
+  }
+
 
 
 
