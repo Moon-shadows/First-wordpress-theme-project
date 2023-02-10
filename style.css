@@ -81,7 +81,7 @@ textarea:focus{
 /*****************  Mobile navigation Done **********************/
 
 
-/*****************  Header **********************/
+/*****************  Header **********************************************************************************************************/
 /*Navigation */
   nav {
     height: 120px;
@@ -90,11 +90,12 @@ textarea:focus{
     margin: 0;
     position: fixed;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 30px;
+    font-size:28px;
     display: flex;
     justify-content: space-between;
     padding: 0 16px 0 0;
     box-sizing: border-box;
+    z-index: 100;
    }
   nav a {
     padding: 0 32px;
@@ -140,7 +141,6 @@ textarea:focus{
     background:pink;
   }
 
-/*Hamburger Icon */
   #menu-icon {
     height: 100%;
     font-size: 28px;
@@ -476,12 +476,7 @@ textarea:focus{
   #banner {
     margin-bottom: 320px;
   }
-
-
-  
 }
-
-
 
 
 /*  Media Queries (min-width) */
