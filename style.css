@@ -16,6 +16,14 @@ p {
    main {
     margin: 0 auto;
    }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
 /*------------------------------------------------------*/
 
 /*****************  Mobile navigation **********************/
@@ -83,6 +91,23 @@ textarea:focus{
 
 /*****************  Header **********************************************************************************************************/
 /*Navigation */
+/*Logo */
+#logo-image {
+  display: flex;
+  height: 100%;
+  
+  align-items: center;
+  transition: 0.4s;
+}
+#logo-image img {
+  height: 70px;
+}
+#logo-image img:hover {
+  background:pink;
+}
+/*Logo End*/
+
+/*Menu Bar */
   nav {
     height: 120px;
     background-color: rgb(251, 224, 229);
@@ -119,28 +144,10 @@ textarea:focus{
   .active {
     color: rgb(243, 11, 185);
   }
+/*Menu Bar End*/
 
- #logo-img {
-    display: flex;
-    height: 100%;
-    background: #111;
-    padding: 0 32px;
-    align-items: center;
-    color: white;
-    transition: .4s;
-  }
-
-  #logo-image {
-    display: flex;
-  }
- #logo-image img {
-    height: 70px;
-  }
-
-  #logo-image:hover {
-    background:pink;
-  }
-
+/*------------------------------------------------------*/
+/* Menu Icon  (Hamburgermenu)*/  
   #menu-icon {
     height: 100%;
     font-size: 28px;
@@ -149,7 +156,7 @@ textarea:focus{
     display: none;
     align-items: center;
   }
-
+/*------------------------------------------------------*/
 /* Search Icon */
   #search-icon {
     color: black;
@@ -158,9 +165,11 @@ textarea:focus{
     transition: 0.4s;
   }
   #search-icon:hover {
-    columns: red;
+   color: red;
   }
 /*------------------------------------------------------*/
+
+
 
 /* Banner */
    #banner {
@@ -463,6 +472,10 @@ textarea:focus{
   }
     #slidout-menu{
       display: block;
+  }
+
+  #logo-image img {
+    height: 50px;
   }
 }
 
