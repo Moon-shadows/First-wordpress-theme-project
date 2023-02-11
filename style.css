@@ -169,11 +169,7 @@ textarea:focus{
  }
 
  
-  
 /*------------------------------------------------------*/
-
-
-
 /* Banner */
    #banner {
     height: 100vh;
@@ -187,7 +183,7 @@ textarea:focus{
     background-position: center;
     background-blend-mode: overlay;
     color: white;
-    margin-bottom: 50px;
+
 
   }
  #banner h1 {
@@ -195,11 +191,9 @@ textarea:focus{
     font-size: 70px;
     width: 50%;
     text-align: center;
-    margin-top: 200px;
     margin-bottom: 0px;
-    line-height: normal;
-    color: ;
-  }
+   }
+
   #banner h3 {
     font-size: 30px;
     width: 60%;
@@ -208,6 +202,7 @@ textarea:focus{
     font-weight: lighter;
   }
 
+/*------------------------------------------------------*/
 /*  Card 2 */
 .section {
     display: flex;
@@ -275,15 +270,67 @@ textarea:focus{
 /*------------------------------------------------------*/
   
  
- /*------------------------------------------------------*/
+/*  Test  */
+ #test {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 700px;
+}
 
- 
+.card-test{
+  background-color: white;
+  border-radius: 20px;
+}
+
+.card-image-test{
+ text-align: center;
+ padding-top: 20px;
+
+}
+
+
+.card-description-test {
+  text-align: center;
+ }
+
+.card-description-test h3{
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(195, 34, 34);
+  }
+  
+.btn-readmore-test {
+  padding: 8px;
+  border: 3px solid rgb(215, 27, 27);
+  border-radius: 20px;
+  transition: 0.4s;
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: white;
+  width: 80%;
+  text-align: center;
+  color: red;
+  padding-bottom: 20px;
+}
+.btn-readmore-test:hover {
+background-color: rgb(198, 240, 246);
+text-decoration: none;
+padding: 8px 64px 8px 24px;
+}
+/*------------------------------------------------------*/
+
 
 
  /*  Section  */
   section {
     display: flex;
     justify-content: space-around;
+   
     flex-wrap: wrap;
   }
   .section-heading {
@@ -407,6 +454,37 @@ textarea:focus{
 
 
 
+/*  Media Queries (min-width) */
+@media(min-width: 1201px) {
+  main {
+      width: 85%;
+  }
+  
+}
+
+@media(min-width: 720px){
+  main{
+      width: 95%;
+  }
+  .card {
+      width: 45%;
+  }
+  .card .card-imgage img {
+      width: 100%;
+  }
+
+  
+.card-test{
+    width: 20%;
+  }
+  .card-test .card-imgage-test img {
+    width: 100%;
+}
+  
+  
+/*------------------------------------------------------*/
+
+
 /*  Media Queries (max-width) */
 @media(max-width: 600px) {
   main{
@@ -486,7 +564,7 @@ textarea:focus{
   #banner h1 {
     font-size: 50px;
     width: 60%;
-    margin-top: 500px;
+
   }
 
   #banner {
@@ -495,25 +573,7 @@ textarea:focus{
 }
 
 
-/*  Media Queries (min-width) */
-@media(min-width: 1201px) {
-  main {
-      width: 85%;
-  }
-  
-}
 
-@media(min-width: 720px){
-  main{
-      width: 95%;
-  }
-  .card {
-      width: 45%;
-  }
-  .card .card-imgage img {
-      width: 100%;
-  }
-}
 
 
 
