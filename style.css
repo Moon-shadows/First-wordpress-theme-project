@@ -167,9 +167,10 @@ input:focus,
 textarea:focus{
   outline: none;
  }
-
- 
+ /*Menu Bar End */
 /*------------------------------------------------------*/
+
+
 /* Banner */
    #banner {
     height: 100vh;
@@ -183,13 +184,11 @@ textarea:focus{
     background-position: center;
     background-blend-mode: overlay;
     color: white;
+   }
 
-
-  }
  #banner h1 {
-    border-radius: 8px;
     font-size: 70px;
-    width: 50%;
+    width: 60%;
     text-align: center;
     margin-bottom: 0px;
    }
@@ -201,75 +200,12 @@ textarea:focus{
     color: white;
     font-weight: lighter;
   }
-
+  /* Banner End */
 /*------------------------------------------------------*/
-/*  Card 2 */
-.section {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    row-gap: 10px;
-    margin-bottom: 50px;
- 
-  }
-.card2 {
-    background: white;
-    width: 25%;
-    border:10px solid white;
-    border-radius: 20px;
-  }
-.card-image2 img{
-    width: 100%;
-  }
-.card-description2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5px;
-  }
-#banner .section .card-description2 .packet-header {
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(195, 34, 34);
-    margin-top: 10;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-.card-description2 .packet-content {
-    color: black;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 10px;
-    text-align: center;
-}
 
-/*  Button Read more 2 */
-.packet-button {
-      width: 80%;
-}
-.btn-readmore2 {
-      padding: 8px;
-      border: 3px solid rgb(215, 27, 27);
-      border-radius: 20px;
-      transition: 0.4s;
-      display: inline-block;
-      margin-bottom: 8px;
-      font-weight: bold;
-      cursor: pointer;
-      background-color: white;
-      width: 100%;
-      text-align: center;
-      color: red;
-  }
-.btn-readmore2:hover {
-    background-color: rgb(198, 240, 246);
-    text-decoration: none;
-    padding: 8px 64px 8px 24px;
- }
-/*------------------------------------------------------*/
+
   
- 
+/* Main ***************************************************/
 /*  Test  */
  #test {
   display: flex;
@@ -278,30 +214,29 @@ textarea:focus{
   flex-wrap: wrap;
   position: absolute;
   top: 700px;
-}
 
+ 
+}
 .card-test{
   background-color: white;
-  border-radius: 20px;
+  border-radius: 15px;
+  width: 350px;
+  margin: 20px;
 }
 
-.card-image-test{
- text-align: center;
- padding-top: 20px;
-
+.card-image-test img {
+  width: 100%;
+  border-radius: 15px;
+  height: 250px;
 }
-
-
 .card-description-test {
   text-align: center;
  }
-
 .card-description-test h3{
   font-size: 20px;
   font-weight: bold;
   color: rgb(195, 34, 34);
-  }
-  
+}
 .btn-readmore-test {
   padding: 8px;
   border: 3px solid rgb(215, 27, 27);
@@ -327,13 +262,14 @@ padding: 8px 64px 8px 24px;
 
 
  /*  Section  */
-  section {
-    display: flex;
-    justify-content: space-around;
-   
-    flex-wrap: wrap;
-  }
-  .section-heading {
+
+ .section-heading-news, .section-heading{
+  margin-top: 350px;
+ 
+ }
+
+
+  .section-heading-news, .section-heading{
     font-size: 32px;
     font-family: 'Roboto Condensed', sans-serif;
     color:  rgb(243, 11, 185);
@@ -343,10 +279,17 @@ padding: 8px 64px 8px 24px;
     display: inline-block;
     padding: 4px 32px;
   }
+  
   .section-heading:hover {
     padding: 4px 48px;
     background: pink;
   }
+
+  section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   }
 
 /*  Sectin Source  */
     #section-source {
@@ -455,13 +398,6 @@ padding: 8px 64px 8px 24px;
 
 
 /*  Media Queries (min-width) */
-@media(min-width: 1201px) {
-  main {
-      width: 85%;
-  }
-  
-}
-
 @media(min-width: 720px){
   main{
       width: 95%;
@@ -473,13 +409,12 @@ padding: 8px 64px 8px 24px;
       width: 100%;
   }
 
-  
-.card-test{
-    width: 20%;
+@media(min-width: 1201px) {
+  main {
+      width: 85%;
   }
-  .card-test .card-imgage-test img {
-    width: 100%;
 }
+.
   
   
 /*------------------------------------------------------*/
