@@ -82,7 +82,7 @@ a:hover {
 
 /*Menu Bar */
   nav {
-    height: 120px;
+    height: 100px;
     background-color: rgb(251, 224, 229);
     width: 100%;
     margin: 0;
@@ -187,18 +187,25 @@ textarea:focus{
    }
 
  #banner h1 {
-    font-size: 70px;
+    font-size: 65px;
     width: 60%;
     text-align: center;
     margin-bottom: 0px;
+    position: absolute;
+    line-height: 1,25;
+    top: 125px;
    }
 
   #banner h3 {
-    font-size: 30px;
+    font-size: 26px;
     width: 60%;
     text-align: center;
     color: white;
     font-weight: lighter;
+    position: absolute;
+    line-height: 1,25;
+    top: 325px;
+   
   }
   /* Banner End */
 /*------------------------------------------------------*/
@@ -213,21 +220,21 @@ textarea:focus{
   column-gap: 10px;
   flex-wrap: wrap;
   position: absolute;
-  top: 700px;
+  top: 450px;
 
  
 }
 .card-test{
   background-color: white;
   border-radius: 15px;
-  width: 350px;
+  width: 375px;
   margin: 20px;
 }
 
 .card-image-test img {
   width: 100%;
   border-radius: 15px;
-  height: 250px;
+  height: 220px;
 }
 .card-description-test {
   text-align: center;
@@ -247,10 +254,10 @@ textarea:focus{
   font-weight: bold;
   cursor: pointer;
   background-color: white;
-  width: 70%;
+  width: 60%;
   text-align: center;
   color: red;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .btn-readmore-test:hover {
 background-color: rgb(198, 240, 246);
@@ -390,7 +397,7 @@ padding: 8px 64px 8px 24px;
     footer #social-media-footer a .fa-facebook,
     footer #social-media-footer a .fa-youtube,
     footer #social-media-footer a .fa-github {
-      color: black
+      color: black;
       transition: 0.4s;
     }
 /*------------------------------------------------------*/
@@ -405,7 +412,7 @@ padding: 8px 64px 8px 24px;
   .card {
       width: 45%;
   }
-  .card .card-imgage img {
+  .card .card-image img {
       width: 100%;
   }
 
@@ -414,7 +421,7 @@ padding: 8px 64px 8px 24px;
       width: 85%;
   }
 }
-.
+
   
   
 /*------------------------------------------------------*/
