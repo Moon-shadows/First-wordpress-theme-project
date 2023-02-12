@@ -271,7 +271,7 @@ padding: 8px 64px 8px 24px;
  /*  Section  */
 
  .section-heading-news, .section-heading{
-  margin-top: 350px;
+  margin-top: 50px;
  
  }
 
@@ -367,14 +367,13 @@ padding: 8px 64px 8px 24px;
       line-height: 1.5;
     }
 
-
 /* Right Footer */
     footer #right-footer{
       flex: 2;
       padding: 8px;
       text-align: center;
     }
-    footer #social-media-footer {
+    footer #social-media-footer ul {
       display: flex;
       list-style: none;
       justify-content: center;
@@ -403,6 +402,66 @@ padding: 8px 64px 8px 24px;
 /*------------------------------------------------------*/
 
 
+@media(max-width: 900px) {
+  nav ul{
+      display: none;
+  }
+
+  #menu-icon{
+      display: flex;
+  }
+  
+  nav {
+    height: 80px;
+  }
+  
+  #searchbox{
+      display: none;
+  }
+    #slidout-menu{
+      display: block;
+  }
+
+  #logo-image img {
+    height: 50px;
+  }
+}
+
+
+@media(max-width: 719px) {
+  main{
+      width: 95%;
+  }
+    
+  section{
+      flex-direction: column;
+  }
+
+  .card,
+  .card .card-image img {
+    width: 100%;
+  }
+
+ 
+
+
+  footer {
+      flex-direction: column;
+      text-align: center;
+  }
+  footer #left-footer {
+      flex:1;
+      border-right: 0;
+      padding-left: 0;
+  }
+  footer #right-footer {
+      background: #eee;
+      color: rgb(59, 38, 38);
+  }
+}
+    
+
+
 
 /*  Media Queries (min-width) */
 @media(min-width: 720px){
@@ -416,11 +475,12 @@ padding: 8px 64px 8px 24px;
       width: 100%;
   }
 
-@media(min-width: 1201px) {
+@media(min-width: 1200px) {
   main {
       width: 85%;
   }
 }
+
 
   
   
@@ -446,61 +506,8 @@ padding: 8px 64px 8px 24px;
   }
 }
 
-@media(max-width: 719px) {
-  main{
-      width: 95%;
-  }
-    
-  section, .section{
-      flex-direction: column;
-  }
 
-  .card2{
-    width: 100%;
-  }
 
-  .card,
-  .card .card-image img{
-      width: 100%;
-  }
-
-  footer {
-      flex-direction: column;
-      text-align: center;
-  }
-  footer #left-footer {
-      flex:1;
-      border-right: 0;
-      padding-left: 0;
-  }
-  footer #right-footer {
-      background: #eee;
-      color: rgb(59, 38, 38);
-  }
-    
-
-@media(max-width: 900px) {
-  nav ul{
-      display: none;
-  }
-  #menu-icon{
-      display: flex;
-  }
-  nav {
-    height: 80px;
-  }
-  
-    #searchbox{
-      display: none;
-  }
-    #slidout-menu{
-      display: block;
-  }
-
-  #logo-image img {
-    height: 50px;
-  }
-}
 
 @media(max-width: 1200px) {
   #banner h1 {
