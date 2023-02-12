@@ -194,6 +194,7 @@ textarea:focus{
     position: absolute;
     line-height: 1,25;
     top: 125px;
+    background-color:rgba(163, 104, 104, 0.592);
    }
 
   #banner h3 {
@@ -205,8 +206,8 @@ textarea:focus{
     position: absolute;
     line-height: 1,25;
     top: 325px;
-   
-  }
+    background-color:rgba(163, 104, 104, 0.733);
+   }
   /* Banner End */
 /*------------------------------------------------------*/
 
@@ -253,14 +254,15 @@ textarea:focus{
   margin-bottom: 8px;
   font-weight: bold;
   cursor: pointer;
-  background-color: white;
+  background-color: rgb(251, 21, 21);
   width: 60%;
   text-align: center;
-  color: red;
+  color: white;
   padding-bottom: 10px;
 }
 .btn-readmore-test:hover {
-background-color: rgb(198, 240, 246);
+background-color: white;
+color: red;
 text-decoration: none;
 padding: 8px 64px 8px 24px;
 }
@@ -400,6 +402,18 @@ padding: 8px 64px 8px 24px;
       transition: 0.4s;
     }
 /*------------------------------------------------------*/
+/*  Media Queries (max-width) */
+@media(max-width: 1200px) {
+  #banner h1 {
+    font-size: 50px;
+    width: 60%;
+    margin-top: 200px;
+  }
+
+  #banner {
+    margin-bottom: 320px;
+  }
+}
 
 
 @media(max-width: 900px) {
@@ -442,9 +456,6 @@ padding: 8px 64px 8px 24px;
     width: 100%;
   }
 
- 
-
-
   footer {
       flex-direction: column;
       text-align: center;
@@ -459,8 +470,25 @@ padding: 8px 64px 8px 24px;
       color: rgb(59, 38, 38);
   }
 }
-    
 
+@media(max-width: 600px) {
+  main{
+      width: 100%;
+  }
+  
+  .card {
+      text-align: center;
+  }
+
+  logo-image {
+      padding: 0;
+  }
+
+  #banner h3{
+      font-size: 20px;
+  }
+}
+/*------------------------------------------------------*/
 
 
 /*  Media Queries (min-width) */
@@ -484,42 +512,13 @@ padding: 8px 64px 8px 24px;
 
   
   
-/*------------------------------------------------------*/
-
-
-/*  Media Queries (max-width) */
-@media(max-width: 600px) {
-  main{
-      width: 100%;
-  }
-  
-  .card {
-      text-align: center;
-  }
-
-  logo-image {
-      padding: 0;
-  }
-
-  #banner h3{
-      font-size: 20px;
-  }
-}
 
 
 
 
-@media(max-width: 1200px) {
-  #banner h1 {
-    font-size: 50px;
-    width: 60%;
-    margin-top: 200px;
-  }
 
-  #banner {
-    margin-bottom: 320px;
-  }
-}
+
+
 
 
 
